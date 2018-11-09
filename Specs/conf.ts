@@ -17,7 +17,7 @@ exports.config = {
     framework: 'jasmine2',
     // Spec patterns are relative to the current working directly when
     // protractor is called.
-    specs: ['Assignment3.js'],
+    specs: ['Assignment.js'],
     //specs: ['./Specs/**/*.js'],
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
