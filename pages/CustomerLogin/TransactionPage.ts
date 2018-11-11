@@ -8,6 +8,7 @@ export class Transaction extends Actions {
    CreditedAmountXpath: string
     DebitedAmountXpath: string
     val: string
+    
     constructor(val1,val){
     super()
 
