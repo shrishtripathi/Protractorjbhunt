@@ -801,6 +801,118 @@ app.controller('ScreenshotReportController', function ($scope) {
         "screenShotFile": "007e0009-0088-00d2-0006-0097002b005d.png",
         "timestamp": 1541968381056,
         "duration": 113
+    },
+    {
+        "description": "launch and enter value in Bankmanager|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "008700b3-0033-00cf-0015-0014008200fc.png",
+        "timestamp": 1541985086951,
+        "duration": 3268
+    },
+    {
+        "description": "click on Bank manager Login button|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00a70011-006a-00dd-000b-0091003d0078.png",
+        "timestamp": 1541985090555,
+        "duration": 645
+    },
+    {
+        "description": "Click on Add customer button|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00ef0083-000c-0095-000d-009800cb0098.png",
+        "timestamp": 1541985091521,
+        "duration": 92
+    },
+    {
+        "description": "enter the first name value|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "0060002c-00bd-0082-0098-00ee009600d2.png",
+        "timestamp": 1541985091871,
+        "duration": 240
+    },
+    {
+        "description": "enter the last name value|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00bb0079-0042-0061-00b0-00d400f50081.png",
+        "timestamp": 1541985092467,
+        "duration": 103
+    },
+    {
+        "description": "enter the Postal code value|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "0076006d-00bf-003a-00a5-00ed008300a3.png",
+        "timestamp": 1541985092879,
+        "duration": 105
+    },
+    {
+        "description": "Click on add customer button|Bankmanager Testing",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 20196,
+        "browser": {
+            "name": "chrome",
+            "version": "70.0.3538.77"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "009d00e1-0011-00a2-00b9-003a005800ba.png",
+        "timestamp": 1541985093261,
+        "duration": 116
     }
 ];
 

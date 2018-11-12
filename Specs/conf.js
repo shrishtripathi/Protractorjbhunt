@@ -8,7 +8,7 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome',
         'shardTestFiles': true,
-        'maxInstances': 2
+        'maxInstances': 1
     },
     // Framework to use. Jasmine 2 is recommended.
     framework: 'jasmine2',
