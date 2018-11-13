@@ -3,15 +3,20 @@
 
 import { element, by, browser,ExpectedConditions } from "protractor";
 import {AddCustomer} from '../pages/BankManagerTest/bankmanager';
+import {OpenAccount} from '../pages/OpenAccount/OpenAccount';
 import {async} from "q" ;
+
 let jsd= require('../Data/testData');
 
 //* Object creation for BankManager-AddCustomer class**//
 var customerdetails = new AddCustomer();
+var openaccountdetails = new OpenAccount(jsd.CustomerData1.firstname+" "+jsd.CustomerData1.lastname,jsd.CustomerData1.currency);
+
 
 describe('Bankmanager Testing',function(){ 
 
      //* Launch*//
+
         it('launch and enter value in Bankmanager', async()=>{
             try {
                 await browser.get(jsd.CustomerData1.url);
@@ -50,6 +55,31 @@ describe('Bankmanager Testing',function(){
         
             await customerdetails.addCustomerButtonClick();
         }); 
+    
+     //* Click on Open Customer  button*//
+        it('Click on Open Customer button', async()=>{
+        await openaccountdetails.clickOpenAccountButton();
+        });
+     //* Click and select Customer dropdown*//
+        it('Click and select customer dropdown', async()=>{
+        await openaccountdetails.selectCustomerName();
+        });
+
+        it("select currency ", () => { 
+            openaccountdetails.selectCurrency();
            
+        });
+
+        it("click on Process button to generate account no", () => { 
+            openaccountdetails.clickOnProcessButton();
+            var alertValidate = browser.switchTo().alert();
+            expect(alertValidate.accept).toBeDefined();
+            alertValidate.getText().then((text) => { 
+                console.log(text);
+                alertValidate.accept();
+            })
+            
+        });
+
     });
 

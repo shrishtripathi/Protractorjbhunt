@@ -12,9 +12,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const bankmanager_1 = require("../pages/BankManagerTest/bankmanager");
+const OpenAccount_1 = require("../pages/OpenAccount/OpenAccount");
 let jsd = require('../Data/testData');
 //* Object creation for BankManager-AddCustomer class**//
 var customerdetails = new bankmanager_1.AddCustomer();
+var openaccountdetails = new OpenAccount_1.OpenAccount(jsd.CustomerData1.firstname + " " + jsd.CustomerData1.lastname, jsd.CustomerData1.currency);
 describe('Bankmanager Testing', function () {
     //* Launch*//
     it('launch and enter value in Bankmanager', () => __awaiter(this, void 0, void 0, function* () {
@@ -49,5 +51,25 @@ describe('Bankmanager Testing', function () {
     it('Click on add customer button', () => __awaiter(this, void 0, void 0, function* () {
         yield customerdetails.addCustomerButtonClick();
     }));
+    //* Click on Open Customer  button*//
+    it('Click on Open Customer button', () => __awaiter(this, void 0, void 0, function* () {
+        yield openaccountdetails.clickOpenAccountButton();
+    }));
+    //* Click and select Customer dropdown*//
+    it('Click and select customer dropdown', () => __awaiter(this, void 0, void 0, function* () {
+        yield openaccountdetails.selectCustomerName();
+    }));
+    it("select currency ", () => {
+        openaccountdetails.selectCurrency();
+    });
+    it("click on Process button to generate account no", () => {
+        openaccountdetails.clickOnProcessButton();
+        var alertValidate = protractor_1.browser.switchTo().alert();
+        expect(alertValidate.accept).toBeDefined();
+        alertValidate.getText().then((text) => {
+            console.log(text);
+            alertValidate.accept();
+        });
+    });
 });
 //# sourceMappingURL=Assignment4.js.map

@@ -15,8 +15,8 @@
     "selenium-webdriver": "^2.53.3"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.8.6",
-    "protractor-jasmine2-html-reporter": "0.0.7",
-    "jasmine-data-provider": "2.2.0"
+    "@types/jasmine": "^2.8.11",
+    "jasmine-data-provider": "2.2.0",
+    "protractor-jasmine2-html-reporter": "0.0.7"
   }
 }
