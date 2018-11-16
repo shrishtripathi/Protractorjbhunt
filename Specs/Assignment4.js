@@ -11,12 +11,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-const bankmanager_1 = require("../pages/BankManagerTest/bankmanager");
-const OpenAccount_1 = require("../pages/OpenAccount/OpenAccount");
+const addcustomerpage_1 = require("../pages/AddCustomerPage/addcustomerpage");
+const openaccountpage_1 = require("../pages/OpenAccountPage/openaccountpage");
 let jsd = require('../Data/testData');
 //* Object creation for BankManager-AddCustomer class**//
-var customerdetails = new bankmanager_1.AddCustomer();
-var openaccountdetails = new OpenAccount_1.OpenAccount(jsd.CustomerData1.firstname + " " + jsd.CustomerData1.lastname, jsd.CustomerData1.currency);
+var customerdetails = new addcustomerpage_1.AddCustomer();
+var openaccountdetails = new openaccountpage_1.OpenAccount(jsd.CustomerData1.firstname + " " + jsd.CustomerData1.lastname, jsd.CustomerData1.currency);
 describe('Bankmanager Testing', function () {
     //* Launch*//
     it('launch and enter value in Bankmanager', () => __awaiter(this, void 0, void 0, function* () {

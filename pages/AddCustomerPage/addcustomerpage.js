@@ -4,7 +4,6 @@ const protractor_1 = require("protractor");
 //import {Actions} from '../../Actions/Action';
 class AddCustomer {
     constructor() {
-        //super();
         this.bankmanagerloginbtn = "//button[contains(text(),'Bank Manager Login')]";
         this.addcustomerbtn = "//button[@ng-class ='btnClass1']";
         this.firstName = "//input[@ng-model ='fName']";
@@ -72,4 +71,4 @@ class AddCustomer {
     }
 }
 exports.AddCustomer = AddCustomer;
-//# sourceMappingURL=bankmanager.js.map
+//# sourceMappingURL=addcustomerpage.js.map

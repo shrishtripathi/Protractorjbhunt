@@ -10,7 +10,7 @@ export class AddCustomer {
     generateCustomerID: string;
 
     constructor() {
-        //super();
+        
         this.bankmanagerloginbtn= "//button[contains(text(),'Bank Manager Login')]";
         this.addcustomerbtn= "//button[@ng-class ='btnClass1']";
         this.firstName = "//input[@ng-model ='fName']";

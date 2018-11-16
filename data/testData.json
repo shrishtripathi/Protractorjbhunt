@@ -3,9 +3,21 @@
     {
         "firstname": "Abhishek",
         "lastname": "karan",
-        "Code": "500010",
+        "Code": "500011",
         "currency": "Rupee",
-        "url":"http://www.way2automation.com/angularjs-protractor/banking/#/login"
+        "url":"http://www.way2automation.com/angularjs-protractor/banking/#/login",
+        "urlamazon":"https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&&openid.pape.max_auth_age=0",
+        "email": "achesshir3@atu.edu",
+        "password": "$jbhunt81",
+        "country": "United States",
+        "fullname": "Everett",
+        "addressline1": "Amphi Broadway",
+        "addressline2": "Broadway Street",
+        "city":"Newyork",
+        "state": "Newyork",
+        "zipcode": "11005",
+        "phonenumber":"8162134567"
+
     },
 
     "CustomerData":{

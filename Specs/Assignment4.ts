@@ -2,15 +2,16 @@
 //* Creation Date: 11/7/2018 *//
 
 import { element, by, browser,ExpectedConditions } from "protractor";
-import {AddCustomer} from '../pages/BankManagerTest/bankmanager';
-import {OpenAccount} from '../pages/OpenAccount/OpenAccount';
+import {AddCustomer} from '../pages/AddCustomerPage/addcustomerpage';
+import {OpenAccount} from '../pages/OpenAccountPage/openaccountpage';
 import {async} from "q" ;
 
 let jsd= require('../Data/testData');
 
 //* Object creation for BankManager-AddCustomer class**//
 var customerdetails = new AddCustomer();
-var openaccountdetails = new OpenAccount(jsd.CustomerData1.firstname+" "+jsd.CustomerData1.lastname,jsd.CustomerData1.currency);
+var openaccountdetails = new OpenAccount
+(jsd.CustomerData1.firstname+" "+jsd.CustomerData1.lastname,jsd.CustomerData1.currency);
 
 
 describe('Bankmanager Testing',function(){ 

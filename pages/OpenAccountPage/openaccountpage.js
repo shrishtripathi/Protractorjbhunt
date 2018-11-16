@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Action_1 = require("../../Actions/Action");
 class OpenAccount extends Action_1.Actions {
-    constructor(select, value1) {
+    constructor(name, value1) {
         super();
         this.clickOpenAccount = "//button[@ng-click='openAccount()']";
-        this.customerName = "//*[contains(text(),'" + select + "')]";
+        this.customerName = "//*[contains(text(),'" + name + "')]";
         this.currency = "//*[contains(text(),'" + value1 + "')]";
         this.processClick = "//button[@type='submit']";
     }
@@ -23,4 +23,4 @@ class OpenAccount extends Action_1.Actions {
     }
 }
 exports.OpenAccount = OpenAccount;
-//# sourceMappingURL=OpenAccount.js.map
+//# sourceMappingURL=openaccountpage.js.map

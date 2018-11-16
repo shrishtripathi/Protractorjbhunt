@@ -18,7 +18,7 @@ exports.config = {
     framework: 'jasmine2',
     // Spec patterns are relative to the current working directly when
     // protractor is called.
-    specs: ['Assignment4.js'],
+    specs: ['AddAddressTC.js'],
     //specs: ['./Specs/**/*.js'],
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
@@ -29,7 +29,7 @@ exports.config = {
     //  browser.manage().window().maximize();
       jasmine.getEnv().addReporter(new HtmlReporter({
          baseDirectory: './../Reports/screenshots',
-         docTitle: '                  XYZ Bank',
+         docTitle: 'Amazon Automation-Project Assignment',
 
       }).getJasmine2Reporter());
    }

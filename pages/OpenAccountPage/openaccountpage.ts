@@ -7,10 +7,10 @@ export class OpenAccount extends Actions{
     currency: string;
     processClick: string;
 
-    constructor(select,value1) {
+    constructor(name,value1) {
         super();
         this.clickOpenAccount = "//button[@ng-click='openAccount()']"
-        this.customerName = "//*[contains(text(),'"+select+"')]"
+        this.customerName = "//*[contains(text(),'"+name+"')]"
         this.currency = "//*[contains(text(),'"+value1+"')]"
         this.processClick = "//button[@type='submit']"
     }
@@ -19,14 +19,17 @@ export class OpenAccount extends Actions{
         this.myClick(this.clickOpenAccount,"click on open account");
     }
 
-    selectCustomerName(): any {
+    selectCustomerName() {
         this.dropDown(this.customerName,"select customer name");
+        
     }
 
     selectCurrency() {
         this.dropDown(this.currency,"select currency name");
     }
+
     clickOnProcessButton() {
         this.myClick(this.processClick,"click on process button");
+    
     }
 }
